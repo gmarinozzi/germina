@@ -1,0 +1,16 @@
+section.info{
+  text-align: center;
+  background-color: $green;
+  h2{
+    color:#fff;
+  }
+  .info-content{
+    padding: 60px 0;
+  }
+}
+#info {
+  padding-top: 67px;
+  margin-top: -67px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}

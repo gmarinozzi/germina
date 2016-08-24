@@ -1,0 +1,80 @@
+@import 'https://fonts.googleapis.com/css?family=Bitter|Montserrat|Open+Sans:400,700';
+
+body {
+  color: $base-font-color;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bitter', serif;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+h1{
+  font-size: 40px;
+  color: $purple;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+h2{
+  font-size: 32px;
+  color: $green;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+h3{
+  font-size: 18px;
+  color: $green;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+p {
+  margin: 0 0 1.5em;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+ul{
+  padding-bottom: 1.5em;
+  li{
+    list-style: none;
+    &:before{
+      padding-right:10px;
+      content: '•';
+      color: $green;
+    }
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}

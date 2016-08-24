@@ -1,0 +1,46 @@
+section.faqs{
+  text-align: center;
+  .faqs-content{
+    padding: 60px 150px;
+    .accordion {
+      padding: 40px 0;
+      > li {
+        margin-bottom: 5px;
+        border-radius: 3px;
+        text-align: left;
+
+        &:before{
+          content: '';
+          display:none;
+        }
+        > a {
+          font-weight: normal;
+          display: block;
+          padding: 10px 20px;
+          color:$purple;
+          background-color: $light-gray;
+        }
+      }
+
+      .accordion-content {
+        display: none;
+        padding: 20px;
+      }
+
+      .is-expanded {
+        > a {
+          color: #fff;
+          background-color: $yellow;
+        }
+
+        display: block;
+      }
+    }
+  }
+}
+#faqs {
+  padding-top: 67px;
+  margin-top: -67px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}

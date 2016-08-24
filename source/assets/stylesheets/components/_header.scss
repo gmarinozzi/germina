@@ -1,0 +1,156 @@
+header.navigation {
+
+  width: 100%;
+  z-index: 999;
+  $horizontal-bar-mode: $large-screen;
+
+  .navigation-wrapper {
+    @include clearfix;
+    position: relative;
+    z-index: 9999;
+    padding-top: 25px;
+  }
+
+  .logo {
+    float: left;
+    max-width: 170px;
+  }
+
+  // Mobile view
+
+  .navigation-menu-button {
+    display: block;
+    float: right;
+    margin: 0;
+    padding-right: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+    }
+  }
+
+  // Nav menu
+
+  nav {
+    float: none;
+    z-index: 9999999;
+    padding-top: 40px;
+
+
+    @include media ($horizontal-bar-mode) {
+      float: right;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    width: 100%;
+    z-index: 9999;
+
+    &.show {
+      display: block;
+    }
+
+    @include media ($horizontal-bar-mode) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  // The nav items
+
+  ul li.nav-link {
+    display: block;
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
+    &:before{
+      content: '';
+    }
+
+    @include media ($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      text-decoration: none;
+      width: auto;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+	  font-size: 16px;
+	  color: $dark-gray;
+
+      @include media ($horizontal-bar-mode) {
+        padding-right: 1em;
+      }
+
+      &:focus,
+      &:hover {
+      	color: $green;
+      }
+      &.button{
+      	color: #fff;
+      	padding: 12px 25px;
+      }
+    }
+  }
+
+  .active-nav-item a {
+    padding-bottom: 3px;
+  }
+
+  // Elements on the far right
+
+  .navigation-tools {
+    background: #505050;
+    clear: both;
+    display: block;
+
+    @include media($horizontal-bar-mode) {
+      background: transparent;
+      clear: none;
+      float: right;
+    }
+  }
+
+}
+.navbar-static-top{
+  //@include transition;
+  position: fixed;
+}
+.navbar-fixed-top{
+  @include transition;
+  position: fixed;
+  background-color: #fff;
+  top:0;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0,0.15); -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0,0.15); box-shadow: 0px 2px 2px 0px rgba(0, 0, 0,0.15);
+  .logo{
+    @include transition;
+    max-width: 120px!important;
+  }
+  .navigation-wrapper {
+    padding-top: 10px!important;
+  }
+  nav {
+    padding-top: 5px!important;
+  }
+}
+#top {
+  padding-top: 67px;
+  margin-top: -67px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}

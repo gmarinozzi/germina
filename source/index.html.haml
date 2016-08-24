@@ -1,0 +1,120 @@
+---
+title: Fondo Germina
+---
+#top
+%header.navigation.navbar-static-top
+	.container
+		.navigation-wrapper
+			=link_to image_tag('logo-germina.svg'), '#top', class: 'logo scroll-on-page-link'
+			=link_to 'MENU', 'javascript:void(0)', id: 'js-mobile-menu', class: 'navigation-menu-button'
+			%nav{:role => "navigation"}
+				%ul#js-navigation-menu.navigation-menu.show
+					%li.nav-link=link_to '¿Qué es?', '#what', class: 'scroll-on-page-link'
+					%li.nav-link=link_to '¿Para quiénes es?', '#whom', class: 'scroll-on-page-link'
+					%li.nav-link=link_to '¿Cómo nace?', '#how', class: 'scroll-on-page-link'
+					%li.nav-link=link_to 'Preguntas Frecuentes', '#faqs', class: 'scroll-on-page-link'
+					%li.nav-link=link_to 'Participa', '#info', class: 'button scroll-on-page-link'
+%section.banner
+	.container
+		=image_tag 'banner.png'
+		.modal.action
+			%label{:for => "modal-1"}
+				.modal-trigger=image_tag 'play.svg'
+	.modal
+		%input#modal-1.modal-state{:type => "checkbox"}
+		.modal-fade-screen
+			.modal-inner
+				.modal-close{:for => "modal-1"}
+					=image_tag "close.svg"
+				.modal-content
+					.video
+						.video-wrapper
+							%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}
+%section.what#what
+	.container
+		.what-content
+			%h1 ¿Qué es Germina?
+			%p Germina es un fondo que tiene como objetivo impulsar proyectos de la sociedad civil jalisciense que tengan que ver con el empoderamiento vecinal y la participación ciudadana. Buscamos fortalecer las ideas que tu y otras personas tienen sobre cómo mejorar su comunidad.
+			%p Germina nace a raíz de la renuncia del 70% de su salario por parte del diputado independiente Pedro Kumamoto y el Fondo es gestionado a través de <strong>Corporativa de Fundaciones</strong>, una fundación comunitaria en Jalisco con más de 15 años de experiencia en vincular y asociar causas comunitarias con fondos privados y de organizaciones filantrópicas.
+			%h3 Germina, siembra ideas, cosecha comunidad
+		=image_tag 'iso.svg'
+%section.whom#whom
+	.container
+		.whom-content
+			%h1 ¿Quienes pueden aplicar?
+			%h3 Asociaciones constituidas de la sociedad civil sin fines de lucro<br>cuyos proyectos tengan impacto en Jalisco
+			.cols
+				.col
+					%p Buscamos proyectos que, de preferencia, entren en las siguientes categorías
+
+					%strong Derecho a la ciudad
+					%ul
+						%li Organización y empoderamiento vecinal
+						%li Derecho a la participación
+						%li Localismo
+
+					%strong Derecho a la transparencia e información
+					%ul
+						%li Pedagogía
+						%li Campañas de información
+						%li Campañas de inteligencia y estrategia
+
+					%strong Activismo y ampliación de los derechos humanos
+					%ul
+						%li Innovación y solidaridad para la procuración y acceso a recursos escasos en sus diferentes variantes.
+						%li Implementación y activación de espacios y mecanismos de participación solidaria.
+				.col
+					=image_tag 'calendario.png'
+			=link_to 'Descarga la convocatoria completa', '#', class: 'button'
+%section.how#how
+	.container
+		.how-content
+			%h1 ¿Cómo nace?
+			%h3 Germina es un fondo semilla en crecimiento
+			%p
+				Germina tiene como objetivo impulsar proyectos, colectivos y organizaciones.<br>
+				Además de esta y próximas convocatorias, generaremos talleres y actividades para fortalecer a nuestra sociedad civil.<br>
+				Queremos conocer a tu organización o tu proyecto, y que participes en el proceso de retroalimentación de Germina.
+			=link_to 'Súmate a Germina', '#', class: 'button white'
+%section.transparency
+	.container
+		.transparency-content
+			%h3 Transparencia
+			%p
+				Desde la primera diputación independiente en Jalisco, estamos demostrando que es posible hacer política austera, honesta y congruente y  que es posible disminuir la brecha que existe entre representantes y representados, incluyendo el salario. Por eso Pedro Kumamoto renuncia al 70% de su sueldo, para crear este fondo.<br>
+				%strong A través de Corporativa de Fundaciones tenemos la certeza de que estos fondos serán concursados con el mayor rigor, de manera completamente legal, formal y transparente.
+			%p
+				Transparencia de Corporativa:
+				=link_to 'http://informes.cf.org.mx/', 'http://informes.cf.org.mx/'
+%section.faqs#faqs
+	.container
+		.faqs-content
+			%h1 Preguntas Frecuentes
+			%ul.accordion
+				%li
+					=link_to 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla turpis, ultrices et est nec, feugiat imperdiet turpis. Donec commodo purus non magna bibendum, ac lobortis eros maximus. Praesent pretium, tortor id lacinia tempus, sem dolor placerat risus, at ornare eros purus id diam. Vivamus euismod justo sed urna ornare hendrerit at vel tortor. Fusce mattis fringilla gravida. Ut ex mi, consequat eget arcu non, elementum aliquam purus. Suspendisse efficitur faucibus urna, non molestie nisl tempus et.
+
+				%li
+					=link_to 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla turpis, ultrices et est nec, feugiat imperdiet turpis. Donec commodo purus non magna bibendum, ac lobortis eros maximus. Praesent pretium, tortor id lacinia tempus, sem dolor placerat risus, at ornare eros purus id diam. Vivamus euismod justo sed urna ornare hendrerit at vel tortor. Fusce mattis fringilla gravida. Ut ex mi, consequat eget arcu non, elementum aliquam purus. Suspendisse efficitur faucibus urna, non molestie nisl tempus et.
+				%li
+					=link_to 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla turpis, ultrices et est nec, feugiat imperdiet turpis. Donec commodo purus non magna bibendum, ac lobortis eros maximus. Praesent pretium, tortor id lacinia tempus, sem dolor placerat risus, at ornare eros purus id diam. Vivamus euismod justo sed urna ornare hendrerit at vel tortor. Fusce mattis fringilla gravida. Ut ex mi, consequat eget arcu non, elementum aliquam purus. Suspendisse efficitur faucibus urna, non molestie nisl tempus et.
+				%li
+					=link_to 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla turpis, ultrices et est nec, feugiat imperdiet turpis. Donec commodo purus non magna bibendum, ac lobortis eros maximus. Praesent pretium, tortor id lacinia tempus, sem dolor placerat risus, at ornare eros purus id diam. Vivamus euismod justo sed urna ornare hendrerit at vel tortor. Fusce mattis fringilla gravida. Ut ex mi, consequat eget arcu non, elementum aliquam purus. Suspendisse efficitur faucibus urna, non molestie nisl tempus et.
+				%li
+					=link_to 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla turpis, ultrices et est nec, feugiat imperdiet turpis. Donec commodo purus non magna bibendum, ac lobortis eros maximus. Praesent pretium, tortor id lacinia tempus, sem dolor placerat risus, at ornare eros purus id diam. Vivamus euismod justo sed urna ornare hendrerit at vel tortor. Fusce mattis fringilla gravida. Ut ex mi, consequat eget arcu non, elementum aliquam purus. Suspendisse efficitur faucibus urna, non molestie nisl tempus et.
+
+%section.info#info
+	.container
+		.info-content
+			%h2 Recibe más información sobre Germina<br>y los proyectos ganadores.
+			%iframe{:frameborder => "0", :height => "500", :marginheight => "0", :marginwidth => "0", :src => "https://docs.google.com/forms/d/e/1FAIpQLSfEZt1Ia7w-V5pBintTW1a32rvNUiEVkydvdnzytIsZZE1rdQ/viewform?embedded=true", :width => "1200"} Cargando...

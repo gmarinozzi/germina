@@ -1,0 +1,30 @@
+section.whom{
+  background-color:$light-gray;
+  .whom-content{
+    padding: 60px 0;
+    text-align: center;
+    .cols{
+      overflow: hidden;
+    }
+    .col{
+      width: 50%;
+      float: left;
+      text-align: left;
+      padding-top: 40px;
+      padding-right: 40px;
+      &:last-child{
+        padding-left: 40px;
+        padding-right: 0;
+      }
+    }
+    .button{
+      margin-top: 30px;
+    }
+  }
+}
+#whom {
+  padding-top: 67px;
+  margin-top: -67px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
