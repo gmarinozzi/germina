@@ -395,6 +395,9 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
     background-color: #fff;
     color: #009286;
     font-weight: 600; }
+  .button.small {
+    padding: 5px 10px;
+    font-weight: 600; }
 
 fieldset {
   background-color: transparent;
@@ -601,7 +604,8 @@ html {
 
 header.navigation {
   width: 100%;
-  z-index: 999; }
+  z-index: 999;
+  background-color: #fff; }
   header.navigation .navigation-wrapper {
     position: relative;
     z-index: 9999;
@@ -797,6 +801,16 @@ section.what {
   text-align: center; }
   section.what .what-content {
     padding: 60px 150px 0 150px; }
+  section.what .cols {
+    margin: 70px 0  50px 0;
+    background-color: #F7F6F8;
+    padding: 30px 20px;
+    border-radius: 2px; }
+    section.what .cols .col {
+      padding-top: 0;
+      text-align: center; }
+      section.what .cols .col .button {
+        margin-top: 20px; }
 
 #what {
   padding-top: 67px;
@@ -808,17 +822,6 @@ section.whom {
   section.whom .whom-content {
     padding: 60px 0;
     text-align: center; }
-    section.whom .whom-content .cols {
-      overflow: hidden; }
-    section.whom .whom-content .col {
-      width: 50%;
-      float: left;
-      text-align: left;
-      padding-top: 40px;
-      padding-right: 40px; }
-      section.whom .whom-content .col:last-child {
-        padding-left: 40px;
-        padding-right: 0; }
     section.whom .whom-content .button {
       margin-top: 30px; }
 
@@ -826,6 +829,19 @@ section.whom {
   padding-top: 67px;
   margin-top: -67px;
   background-clip: content-box; }
+
+.cols {
+  overflow: hidden; }
+
+.col {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-top: 40px;
+  padding-right: 40px; }
+  .col:last-child {
+    padding-left: 40px;
+    padding-right: 0; }
 
 section.how {
   background-color: #F05169; }
@@ -846,10 +862,13 @@ section.transparency {
   padding: 40px 0;
   background-color: #46354A; }
   section.transparency h1, section.transparency h3, section.transparency p {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.8); }
   section.transparency a {
-    color: #fff;
-    border-bottom: 1px solid #fff; }
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    section.transparency a:hover {
+      border-bottom: 1px solid white;
+      color: white; }
 
 section.faqs {
   text-align: center; }
@@ -891,6 +910,8 @@ section.info {
     color: #fff; }
   section.info .info-content {
     padding: 60px 0; }
+    section.info .info-content iframe {
+      overflow: hidden; }
 
 #info {
   padding-top: 67px;
