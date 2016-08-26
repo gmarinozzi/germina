@@ -602,6 +602,21 @@ html {
       padding-left: 10px;
       padding-right: 10px; } }
 
+@media screen and (min-width: 320px) and (max-width: 959px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 15px; }
+
+  h2 {
+    font-size: 26px;
+    margin-bottom: 40px; }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 40px; }
+
+  p {
+    font-size: 15px; } }
 header.navigation {
   width: 100%;
   z-index: 999;
@@ -687,6 +702,26 @@ header.navigation {
         background: transparent;
         clear: none;
         float: right; } }
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    header.navigation .logo {
+      max-width: 150px; }
+    header.navigation .navigation-wrapper {
+      padding-top: 15px; }
+      header.navigation .navigation-wrapper nav {
+        padding-top: 25px; } }
+  @media screen and (min-width: 320px) and (max-width: 959px) {
+    header.navigation .logo {
+      max-width: 120px; }
+    header.navigation .navigation-wrapper {
+      padding-top: 10px; }
+      header.navigation .navigation-wrapper nav {
+        padding-top: 18px; }
+    header.navigation ul li.nav-link a {
+      font-size: 14px;
+      padding-right: 5px; }
+      header.navigation ul li.nav-link a.button {
+        color: #fff;
+        padding: 12px 12px; } }
 
 .navbar-static-top {
   position: fixed; }
@@ -811,6 +846,9 @@ section.what {
       text-align: center; }
       section.what .cols .col .button {
         margin-top: 20px; }
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    section.what .what-content {
+      padding: 60px 0 0 0; } }
 
 #what {
   padding-top: 67px;
@@ -897,6 +935,9 @@ section.faqs {
         section.faqs .faqs-content .accordion .is-expanded > a {
           color: #fff;
           background-color: #FFB200; }
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    section.faqs .faqs-content {
+      padding: 60px 0; } }
 
 #faqs {
   padding-top: 67px;
