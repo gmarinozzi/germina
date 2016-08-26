@@ -22,11 +22,16 @@ section.what{
 	    padding: 60px 0 0 0;
 	  }
 	}
+	@include media(min-width 320px max-width 959px) {
+	  .image{
+	    	img{max-width: 250px;}
+	    }
+	}
 }
 
 #what {
 	padding-top: 67px;
-    margin-top: -67px;
-    -webkit-background-clip: content-box;
-    background-clip: content-box;
+  margin-top: -67px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
 }

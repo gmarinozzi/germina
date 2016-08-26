@@ -28,3 +28,12 @@ section.whom{
     padding-right: 0;
   }
 }
+@include media(min-width 320px max-width 779px) {
+  .cols{
+    .col{width: 100%; padding: 0!important;
+      &:last-child{
+        padding-top: 30px!important;
+      }
+    }
+  }
+}

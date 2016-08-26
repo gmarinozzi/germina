@@ -3,6 +3,8 @@ header.navigation {
   width: 100%;
   z-index: 999;
   $horizontal-bar-mode: $large-screen;
+  $vertical-bar-mode: $medium-screen;
+
   background-color: #fff;
 
   .navigation-wrapper {
@@ -75,7 +77,10 @@ header.navigation {
     overflow: hidden;
     text-align: right;
     width: 100%;
+    padding-right: 12px;
     z-index: 9999;
+    margin-top: 20px;
+
     &:before{
       content: '';
     }
@@ -85,14 +90,16 @@ header.navigation {
       display: inline;
       text-decoration: none;
       width: auto;
+      padding-right: 0;
+      margin-top: 0;
     }
 
     a {
       display: inline-block;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
-	  font-size: 16px;
-	  color: $dark-gray;
+	    font-size: 16px;
+	    color: $dark-gray;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
@@ -105,6 +112,7 @@ header.navigation {
       &.button{
       	color: #fff;
       	padding: 12px 25px;
+        margin-top: 0;
       }
     }
   }
@@ -112,21 +120,9 @@ header.navigation {
   .active-nav-item a {
     padding-bottom: 3px;
   }
-
-  // Elements on the far right
-
-  .navigation-tools {
-    background: #505050;
-    clear: both;
-    display: block;
-
-    @include media($horizontal-bar-mode) {
-      background: transparent;
-      clear: none;
-      float: right;
-    }
+  .navigation-menu-button{
+    padding-top: 15px;
   }
-
   @include media(min-width 320px max-width 1199px) {
     .logo {
       max-width: 150px;
