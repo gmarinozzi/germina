@@ -37,6 +37,11 @@ section.faqs{
       }
     }
   }
+  @include media(min-width 320px max-width 1199px) {
+    .faqs-content{
+      padding: 60px 0;
+    }
+  }
 }
 #faqs {
   padding-top: 67px;
