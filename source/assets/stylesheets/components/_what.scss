@@ -3,6 +3,21 @@ section.what{
   .what-content{
     padding: 60px 150px 0 150px;
   }
+  .cols{
+  		margin: 70px 0  50px 0;
+  		background-color: $light-gray;
+  		padding: 30px 20px;
+  		border-radius: 2px;
+
+
+  	.col{
+  		padding-top: 0;
+  		text-align: center;
+  		.button{
+  			margin-top: 20px;
+  		}
+  	}
+  }
 }
 #what {
 	padding-top: 67px;

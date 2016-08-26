@@ -6,6 +6,8 @@ section.info{
   }
   .info-content{
     padding: 60px 0;
+    iframe{
+      overflow: hidden;}
   }
 }
 #info {

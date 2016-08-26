@@ -3,6 +3,7 @@ header.navigation {
   width: 100%;
   z-index: 999;
   $horizontal-bar-mode: $large-screen;
+  background-color: #fff;
 
   .navigation-wrapper {
     @include clearfix;
