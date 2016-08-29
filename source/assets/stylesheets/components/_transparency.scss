@@ -1,12 +1,18 @@
 section.transparency{
-  padding: 40px 0;
+	.transparency-content{
+		  padding: 60px 0;
+
+	}
   background-color:$purple;
   h1, h3, p{
         color:rgba(255, 255, 255, .8);
   }
   a{
     color:rgba(255, 255, 255, .7);
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    font-size: 17px;
+    line-height: 20px;
+    margin: 7px 0;
     &:hover{
     	border-bottom: 1px solid rgba(255, 255, 255, 1);
     	color:rgba(255, 255, 255, 1);

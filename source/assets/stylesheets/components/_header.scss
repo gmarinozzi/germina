@@ -132,6 +132,14 @@ header.navigation {
       nav {
         padding-top: 25px;
       }
+      ul li.nav-link a{
+      font-size: 14px;
+      padding-right: 5px;
+      &.button{
+        color: #fff;
+        padding: 12px 12px;
+      }
+    }
     }
   }
   @include media(min-width 320px max-width 959px) {
@@ -143,15 +151,16 @@ header.navigation {
       nav {
         padding-top: 18px;
       }
-    }
-    ul li.nav-link a{
-      font-size: 14px;
-      padding-right: 5px;
-      &.button{
-        color: #fff;
-        padding: 12px 12px;
+      ul li.nav-link a{
+        font-size: 13px;
+        padding-right: 0px;
+        &.button{
+          color: #fff;
+          padding: 12px 7px;
+        }
       }
     }
+    
   }
 
 }
