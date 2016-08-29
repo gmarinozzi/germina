@@ -2,8 +2,6 @@ header.navigation {
 
   width: 100%;
   z-index: 999;
-  $horizontal-bar-mode: $large-screen;
-  $vertical-bar-mode: $medium-screen;
 
   background-color: #fff;
 
@@ -19,79 +17,30 @@ header.navigation {
     max-width: 170px;
   }
 
-  // Mobile view
-
-  .navigation-menu-button {
-    display: none;
-    float: right;
-    margin: 0;
-    padding-right: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    @include media ($horizontal-bar-mode) {
-      display: none;
-    }
-
-    &:focus,
-    &:hover {
-    }
-  }
-
   // Nav menu
 
   nav {
-    float: none;
-    z-index: 9999999;
-    padding-top: 40px;
-
-
-    @include media ($horizontal-bar-mode) {
       float: right;
-    }
   }
 
   ul.navigation-menu {
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    width: 100%;
-    z-index: 9999;
-
-    &.show {
-      display: block;
-    }
-
-    @include media ($horizontal-bar-mode) {
-      display: inline;
+    display: inline;
       margin: 0;
       padding: 0;
-    }
   }
 
   // The nav items
 
   ul li.nav-link {
-    display: block;
-    overflow: hidden;
-    text-align: right;
-    width: 100%;
-    padding-right: 12px;
-    z-index: 9999;
-    margin-top: 20px;
-
-    &:before{
-      content: '';
-    }
-
-    @include media ($horizontal-bar-mode) {
       background: transparent;
       display: inline;
       text-decoration: none;
       width: auto;
       padding-right: 0;
       margin-top: 0;
+
+    &:before{
+      content: '';
     }
 
     a {
@@ -100,10 +49,7 @@ header.navigation {
       font-family: 'Montserrat', sans-serif;
 	    font-size: 16px;
 	    color: $dark-gray;
-
-      @include media ($horizontal-bar-mode) {
-        padding-right: 1em;
-      }
+      padding-right: 1em;
 
       &:focus,
       &:hover {
@@ -123,7 +69,7 @@ header.navigation {
   .navigation-menu-button{
     padding-top: 15px;
   }
-  @include media(min-width 320px max-width 1199px) {
+  @include media(min-width 780px max-width 1199px) {
     .logo {
       max-width: 150px;
     }
@@ -142,7 +88,7 @@ header.navigation {
     }
     }
   }
-  @include media(min-width 320px max-width 959px) {
+  @include media(min-width 780px max-width 959px) {
     .logo {
       max-width: 120px;
     }
@@ -160,7 +106,21 @@ header.navigation {
         }
       }
     }
-    
+  }
+  @include media(min-width 320px max-width 779px) {
+    .logo{
+      text-align: center;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      img{
+        max-width: 120px;
+      }
+    }
+    nav {
+        display:none;
+      }
   }
 
 }
@@ -177,7 +137,7 @@ header.navigation {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0,0.15);
   .logo{
     @include transition;
-    max-width: 120px!important;
+    img{max-width: 120px!important;}
   }
   .navigation-wrapper {
     padding-top: 10px!important;
