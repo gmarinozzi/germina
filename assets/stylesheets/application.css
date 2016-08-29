@@ -632,7 +632,8 @@ header.navigation {
     float: left;
     max-width: 170px; }
   header.navigation nav {
-    float: right; }
+    float: right;
+    padding-top: 40px; }
   header.navigation ul.navigation-menu {
     display: inline;
     margin: 0;
