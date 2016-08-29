@@ -1,5 +1,5 @@
 .container{
-  width: 1200px; margin-left: auto; margin-right: auto;
+  width: 1200px; margin-left: auto; margin-right: auto; box-sizing: border-box;
   @include media(min-width 960px max-width 1199px) {
   width: 960px; padding-left:15px; padding-right:15px;
   }
