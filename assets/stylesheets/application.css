@@ -378,8 +378,7 @@ button, .button, input[type="button"], input[type="reset"], input[type="submit"]
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  vertical-align: middle;
-  white-space: nowrap; }
+  vertical-align: middle; }
   button:hover, .button:hover, button:focus, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #00756b;
     color: #fff; }
@@ -706,7 +705,13 @@ header.navigation {
     header.navigation .navigation-wrapper {
       padding-top: 15px; }
       header.navigation .navigation-wrapper nav {
-        padding-top: 25px; } }
+        padding-top: 25px; }
+      header.navigation .navigation-wrapper ul li.nav-link a {
+        font-size: 14px;
+        padding-right: 5px; }
+        header.navigation .navigation-wrapper ul li.nav-link a.button {
+          color: #fff;
+          padding: 12px 12px; } }
   @media screen and (min-width: 320px) and (max-width: 959px) {
     header.navigation .logo {
       max-width: 120px; }
@@ -714,12 +719,12 @@ header.navigation {
       padding-top: 10px; }
       header.navigation .navigation-wrapper nav {
         padding-top: 18px; }
-    header.navigation ul li.nav-link a {
-      font-size: 14px;
-      padding-right: 5px; }
-      header.navigation ul li.nav-link a.button {
-        color: #fff;
-        padding: 12px 12px; } }
+      header.navigation .navigation-wrapper ul li.nav-link a {
+        font-size: 13px;
+        padding-right: 0px; }
+        header.navigation .navigation-wrapper ul li.nav-link a.button {
+          color: #fff;
+          padding: 12px 7px; } }
 
 .navbar-static-top {
   position: fixed; }
@@ -862,7 +867,7 @@ section.whom {
     padding: 60px 0;
     text-align: center; }
     section.whom .whom-content .button {
-      margin-top: 30px; }
+      margin-bottom: 30px; }
 
 #whom {
   padding-top: 67px;
@@ -893,7 +898,7 @@ section.how {
   section.how .how-content {
     padding: 60px 0;
     text-align: center; }
-    section.how .how-content h1, section.how .how-content h3, section.how .how-content p {
+    section.how .how-content h1, section.how .how-content h2, section.how .how-content h3, section.how .how-content p {
       color: #fff; }
   section.how .button {
     margin-top: 30px; }
@@ -904,13 +909,17 @@ section.how {
   background-clip: content-box; }
 
 section.transparency {
-  padding: 40px 0;
   background-color: #46354A; }
+  section.transparency .transparency-content {
+    padding: 60px 0; }
   section.transparency h1, section.transparency h3, section.transparency p {
     color: rgba(255, 255, 255, 0.8); }
   section.transparency a {
     color: rgba(255, 255, 255, 0.7);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    line-height: 20px;
+    margin: 7px 0; }
     section.transparency a:hover {
       border-bottom: 1px solid white;
       color: white; }
@@ -954,8 +963,10 @@ section.faqs {
 section.info {
   text-align: center;
   background-color: #009286; }
-  section.info h2 {
+  section.info h3 {
     color: #fff; }
+  section.info h2 {
+    color: #46354A; }
   section.info .info-content {
     padding: 60px 0; }
     section.info .info-content iframe {
@@ -965,3 +976,50 @@ section.info {
   padding-top: 67px;
   margin-top: -67px;
   background-clip: content-box; }
+
+section.contact {
+  background-color: #180F40; }
+  section.contact .contact-content {
+    padding: 60px 0; }
+  section.contact h3, section.contact p, section.contact a {
+    color: rgba(255, 255, 255, 0.5); }
+  section.contact nav ul {
+    text-align: center; }
+    section.contact nav ul li {
+      list-style: none;
+      display: inline-block;
+      text-align: left;
+      margin-right: 40px;
+      padding-left: 0;
+      margin-bottom: 20px; }
+      section.contact nav ul li:last-child {
+        margin-right: 0; }
+      section.contact nav ul li:before {
+        display: none; }
+      section.contact nav ul li a {
+        color: #009286;
+        display: inline-block; }
+        section.contact nav ul li a img {
+          display: inline-block;
+          float: left;
+          width: 32px;
+          margin-right: 10px;
+          opacity: .7; }
+        section.contact nav ul li a .text {
+          float: left; }
+          section.contact nav ul li a .text strong {
+            display: block;
+            line-height: 17px;
+            font-size: 15px; }
+          section.contact nav ul li a .text span {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 13px;
+            display: block;
+            line-height: 17px; }
+        section.contact nav ul li a:hover {
+          color: #fff; }
+          section.contact nav ul li a:hover img {
+            opacity: 1; }
+  @media screen and (min-width: 320px) and (max-width: 779px) {
+    section.contact nav li {
+      width: 100%; } }
