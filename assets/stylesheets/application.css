@@ -563,6 +563,11 @@ ul {
       content: '•';
       color: #009286; }
 
+ul.check-list li {
+  padding: 7px; }
+  ul.check-list li:before {
+    content: url(../images/check.svg); }
+
 hr {
   border-bottom: 1px solid #F7F6F8;
   border-left: 0;
