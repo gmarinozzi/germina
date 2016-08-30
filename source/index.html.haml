@@ -12,7 +12,7 @@ title: Fondo Germina
 					%li.nav-link=link_to '¿Quiénes pueden participar?', '#whom', class: 'scroll-on-page-link'
 					%li.nav-link=link_to '¿Cómo nace?', '#how', class: 'scroll-on-page-link'
 					%li.nav-link=link_to 'Preguntas Frecuentes', '#faqs', class: 'scroll-on-page-link'
-					%li.nav-link=link_to 'Participa', '#info', class: 'button scroll-on-page-link'
+					%li.nav-link=link_to 'Participa', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform', class: 'button', target: '_blank'
 %section.banner
 	.container
 		=image_tag 'banner.png'
@@ -66,30 +66,16 @@ title: Fondo Germina
 
 			.cols
 				.col
-					%p Los proyectos deberán enmarcarse dentro de por lo menos una de las siguientes áreas de incidencia:
+					%p
+						%strong Los proyectos deberán enmarcarse dentro de por lo menos una de las siguientes áreas de incidencia:
 
-					%strong Participación política
-					%ul
-						%li Participación política de las jóvenes, mujeres y población indígena
-						%li Implementación de mecanismos de participación social
-						%li Organización y empoderamiento vecinal
-						%li Innovación política
-
-					%strong Desarrollo Sustentable
-					%ul
-						%li Economía solidaria
-						%li Ecología y medio ambiente
-
-					%strong Derecho a la ciudad y buen vivir
-					%ul
-						%li Movilidad
-						%li Recuperación de espacios públicos
-						%li Fomento del deporte
-						%li Acceso al arte y  la cultura
-					%strong Transparencia y acceso a la información
-					%ul
-						%li Fiscalización de los poderes públicos
-						%li Campañas de información.
+					%ul.check-list
+						%li Participación política
+						%li Innovación cívica
+						%li Desarrollo Sustentable
+						%li Derecho a la ciudad y buen vivir
+						%li Derechos Humanos
+						%li Transparencia y acceso a la información
 
 				.col
 					=image_tag 'calendario.png'
@@ -266,7 +252,7 @@ title: Fondo Germina
 		.info-content
 			%h2 Recibe más información sobre Germina y los proyectos ganadores
 			%h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Donec ornare eget tortor tincidunt egestas.
-			=link_to 'Súmate al mail list', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform?usp=fb_send_twt', class: 'button white', target: '_blank'
+			=link_to 'Súmate al mail list', 'https://docs.google.com/forms/d/e/1FAIpQLSeCzl7maDznroEASlOwDwJuzEEvKTJnZKrODSaSMif09pqfEg/viewform', class: 'button white', target: '_blank'
 %section.contact#contact
 	.container
 		.contact-content
