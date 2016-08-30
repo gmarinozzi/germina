@@ -16,9 +16,9 @@ title: Fondo Germina
 %section.banner
 	.container
 		=image_tag 'banner.png'
-		.modal.action
-			%label{:for => "modal-1"}
-				.modal-trigger=image_tag 'play.svg'
+		/ .modal.action
+		/ 	%label{:for => "modal-1"}
+		/ 		.modal-trigger=image_tag 'play.svg'
 	.modal
 		%input#modal-1.modal-state{:type => "checkbox"}
 		.modal-fade-screen
@@ -89,6 +89,7 @@ title: Fondo Germina
 				Además de esta y próximas convocatorias, generaremos talleres y actividades para fortalecer a nuestra sociedad civil.<br>
 				Queremos conocer a tu organización o tu proyecto, y que participes en el proceso de retroalimentación de Germina.
 			=link_to 'Súmate a Germina', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform?usp=fb_send_twt', class: 'button white', target: '_blank'
+
 %section.transparency#how
 	.container
 		.transparency-content
