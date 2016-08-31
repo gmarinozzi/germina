@@ -15,20 +15,9 @@ title: Fondo Germina
 					%li.nav-link=link_to 'Participa', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform', class: 'button', target: '_blank'
 %section.banner
 	.container
-		=image_tag 'banner.png'
-		/ .modal.action
-		/ 	%label{:for => "modal-1"}
-		/ 		.modal-trigger=image_tag 'play.svg'
-	.modal
-		%input#modal-1.modal-state{:type => "checkbox"}
-		.modal-fade-screen
-			.modal-inner
-				.modal-close{:for => "modal-1"}
-					=image_tag "close.svg"
-				.modal-content
-					.video
-						.video-wrapper
-							%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}
+		.video
+			.video-wrapper
+				%iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/1cGtoEBRqYs?showinfo=0&iv_load_policy=3"}
 %section.what#what
 	.container
 		.what-content
@@ -62,7 +51,7 @@ title: Fondo Germina
 		.whom-content
 			%h1 ¿Quiénes pueden participar?
 			%h3 Organizaciones de la Sociedad Civil debidamente constituidas cuyo impacto se vea reflejado en el Estado de Jalisco, que no persigan fines de lucro y que sean donatarias autorizadas.
-			=link_to '↓ Descarga la convocatoria completa', '#', class: 'button'
+			=link_to '↓ Descarga la convocatoria completa', 'http://www.fondogermina.mx/convocatoria', class: 'button', target: '_blank'
 
 			.cols
 				.col
