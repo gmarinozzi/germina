@@ -821,7 +821,7 @@ section.banner {
 section.what {
   text-align: center; }
   section.what .what-content {
-    padding: 60px 150px 0 150px; }
+    padding: 60px 150px 60px 150px; }
   section.what .cols {
     margin: 70px 0  50px 0;
     background-color: #F7F6F8;
