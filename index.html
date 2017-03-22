@@ -16,7 +16,7 @@
           <nav role='navigation'>
             <ul class='navigation-menu show'>
               <li class='nav-link'><a href="#what" class="scroll-on-page-link">¿Qué es?</a></li>
-              <li class='nav-link'><a href="#whom" class="scroll-on-page-link">¿Quiénes pueden participar?</a></li>
+              <!-- %li.nav-link=link_to '¿Quiénes pueden participar?', '#whom', class: 'scroll-on-page-link' -->
               <li class='nav-link'><a href="#how" class="scroll-on-page-link">¿Cómo nace?</a></li>
               <li class='nav-link'><a href="#faqs" class="scroll-on-page-link">Preguntas Frecuentes</a></li>
               <li class='nav-link'><a href="https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform" class="button" target="_blank">Participa</a></li>
@@ -63,34 +63,26 @@
         </div>
       </div>
     </section>
-    <section class='whom' id='whom'>
-      <div class='container'>
-        <div class='whom-content'>
-          <h1>¿Quiénes pueden participar?</h1>
-          <h3>Organizaciones de la Sociedad Civil debidamente constituidas cuyo impacto se vea reflejado en el Estado de Jalisco, que no persigan fines de lucro y que sean donatarias autorizadas.</h3>
-          <a href="http://www.fondogermina.mx/convocatoria" class="button" target="_blank">↓ Descarga la convocatoria completa</a>
-          <a href="http://www.fondogermina.mx/Formato_proyecto_germina.xlsx" class="button" target="_blank">↓ Descarga el formato para aplicar tu proyecto</a>
-          <div class='cols'>
-            <div class='col'>
-              <p>
-                <strong>Los proyectos deberán enmarcarse dentro de por lo menos una de las siguientes áreas de incidencia:</strong>
-              </p>
-              <ul class='check-list'>
-                <li>Participación política</li>
-                <li>Innovación cívica</li>
-                <li>Desarrollo Sustentable</li>
-                <li>Derecho a la ciudad y buen vivir</li>
-                <li>Derechos Humanos</li>
-                <li>Transparencia y acceso a la información</li>
-              </ul>
-            </div>
-            <div class='col'>
-              <img src="assets/images/calendario.png" alt="Calendario" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- %section.whom#whom -->
+    <!-- .container -->
+    <!-- .whom-content -->
+    <!-- %h1 ¿Quiénes pueden participar? -->
+    <!-- %h3 Organizaciones de la Sociedad Civil debidamente constituidas cuyo impacto se vea reflejado en el Estado de Jalisco, que no persigan fines de lucro y que sean donatarias autorizadas. -->
+    <!-- =link_to '↓ Descarga la convocatoria completa', 'http://www.fondogermina.mx/convocatoria', class: 'button', target: '_blank' -->
+    <!-- =link_to '↓ Descarga el formato para aplicar tu proyecto', 'http://www.fondogermina.mx/Formato_proyecto_germina.xlsx', class: 'button', target: '_blank' -->
+    <!-- .cols -->
+    <!-- .col -->
+    <!-- %p -->
+    <!-- %strong Los proyectos deberán enmarcarse dentro de por lo menos una de las siguientes áreas de incidencia: -->
+    <!-- %ul.check-list -->
+    <!-- %li Participación política -->
+    <!-- %li Innovación cívica -->
+    <!-- %li Desarrollo Sustentable -->
+    <!-- %li Derecho a la ciudad y buen vivir -->
+    <!-- %li Derechos Humanos -->
+    <!-- %li Transparencia y acceso a la información -->
+    <!-- .col -->
+    <!-- =image_tag 'calendario.png' -->
     <section class='how'>
       <div class='container'>
         <div class='how-content'>
