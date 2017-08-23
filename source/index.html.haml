@@ -11,6 +11,7 @@ title: Fondo Germina
 					%li.nav-link=link_to '¿Qué es?', '#what', class: 'scroll-on-page-link'
 					/ %li.nav-link=link_to '¿Quiénes pueden participar?', '#whom', class: 'scroll-on-page-link'
 					%li.nav-link=link_to '¿Cómo nace?', '#how', class: 'scroll-on-page-link'
+					%li.nav-link=link_to '¿Qué hacemos?', '#do', class: 'scroll-on-page-link'
 					%li.nav-link=link_to 'Preguntas Frecuentes', '#faqs', class: 'scroll-on-page-link'
 					%li.nav-link=link_to 'Participa', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform', class: 'button', target: '_blank'
 %section.banner
@@ -22,11 +23,12 @@ title: Fondo Germina
 	.container
 		.what-content
 			%h1 ¿Qué es Germina?
-			%p Las personas en Jalisco están activas y tienen ganas de hacer más. Queremos que todas esas voluntades e ideas que harán toda la diferencia, germinen. A veces, solo se necesita un impulso. Por eso creamos Germina, una iniciativa de largo plazo para potenciar proyectos que busquen generar una comunidad participativa en el estado de Jalisco.
+			%p Las personas en Jalisco están activas y tienen ganas de hacer más. Queremos que germinen todas esas voluntades e ideas  que harán toda la diferencia. A veces solo se necesita un impulso.
 
-			%p Germina nace a raíz de la renuncia del diputado independiente Pedro Kumamoto al 70% de su salario, como parte de un esfuerzo por construir una política austera, honesta y congruente. Este dinero se destina quincena tras quincena a un fondo semilla, abierto y transparente, gestionado a través de Corporativa de Fundaciones. De manera periódica, se generarán convocatorias, actividades y talleres que consoliden la comunidad Germina.
+			%p Por esta razón creamos Germina, una iniciativa a largo plazo para potencializar proyectos y propuestas en favor del desarrollo y consolidación de la comunidad. 
 
-			%p Que nuestras ideas sean el principal motivo de encuentro y cambio. Demostremos todo lo que es posible cuando construimos en colectivo.
+			%p Que nuestras ideas sean el principal motivo de encuentro y cambio. ¡Demostremos todo lo que es posible cuando construimos en colectivo!
+
 
 			%h3 Germina.<br>Siembra ideas, cosecha comunidad.
 
@@ -47,7 +49,7 @@ title: Fondo Germina
 			/ 		Corporativa de Fundaciones<br>
 			/ 		Calle Manuel López Cotilla 2139, Guadalajara, Jal.<br>
 			/ 		=link_to 'Asiste', 'https://www.facebook.com/events/1642701726058591/', target: '_blank', class: 'button small'
-			.image=link_to image_tag('vacante.jpg'), 'http://www.fondogermina.mx/vacante', target: '_blank'
+			/ .image=link_to image_tag('vacante.jpg'), 'http://www.fondogermina.mx/vacante', target: '_blank'
 / %section.whom#whom
 / 	.container
 / 		.whom-content
@@ -87,14 +89,53 @@ title: Fondo Germina
 		.transparency-content
 			%h1 ¿Cómo nace Germina?
 
-			%p Desde la primera diputación independiente en Jalisco, estamos haciendo una política austera, honesta y congruente y creemos que es posible disminuir la brecha que existe entre representantes y representados. Por eso Pedro Kumamoto renuncia al 70% de su sueldo, para echar a andar Germina.
+			%p Germina nace a raíz de la renuncia del diputado independiente Pedro Kumamoto al 70% de su salario, como parte de un esfuerzo por construir una política austera, honesta y congruente.
 
-			%p A través de Corporativa de Fundaciones tenemos la certeza de que estos fondos serán concursados con el mayor rigor, de manera completamente legal, formal y transparente. Es importante mencionar que este fondo es abierto y cualquier persona que quiere contribuir económicamente al impulso de estos proyectos puede hacerlo a través de Corporativa de Fundaciones.
-
+			%p Esta donación se destina —quincena tras quincena— a un fondo semilla, abierto y transparente; el cual es administrado a través de Corporativa de Fundaciones, teniendo la certeza de que los recursos serán concursados con el mayor rigor y de manera completamente legal, formal y transparente.
+			%p Es importante mencionar que este fondo es abierto y cualquier persona que quiera contribuir económicamente al impulso de iniciativas de la ciudadanía puede hacerlo a través de Corporativa de Fundaciones.
 			%p
-				=link_to '→ Donación 70% del salario de Pedro Kumamoto', 'https://docs.google.com/spreadsheets/d/1oqClMgUOeP8Lkq2BW40bg75RlJyoN5vBCnRQwodti6Y/edit#gid=0', target: '_blank'
+				=link_to '→ Donación 70% del salario de Pedro Kumamoto, (Click aquí)', 'https://docs.google.com/spreadsheets/d/1oqClMgUOeP8Lkq2BW40bg75RlJyoN5vBCnRQwodti6Y/edit#gid=0', target: '_blank'
 				<br>
-				=link_to '→ Transparencia Fondo Germina', 'https://docs.google.com/spreadsheets/d/1ywNQLvm1JZbC1tOkZeIBXhEio6AlZHB9MjWPd1dag84/edit#gid=0', target: '_blank'
+				=link_to '→ Transparencia Fondo Germina, (Click aquí)', 'https://docs.google.com/spreadsheets/d/1ywNQLvm1JZbC1tOkZeIBXhEio6AlZHB9MjWPd1dag84/edit#gid=0', target: '_blank'
+
+%section.whatwedo#do
+	.container
+		.what-content
+			%h1 ¿Qué hacemos?
+			%p A través de nuestros programas, queremos impulsar iniciativas propuestas por la ciudadanía que activen su participación política y que respondan a soluciones específicas, atendidas desde las áreas de incidencia del fondo:
+
+			.flex-boxes
+				%a.flex-box{:href => "javascript:void(0)"}
+					=image_tag('icon.svg')
+					%h1.flex-title Participación política
+					%p Queremos que la ciudadanía tenga incidencia sobre la agenda pública, participando e influyendo directamente en las decisiones políticas que los involucren.
+
+				%a.flex-box{:href => "javascript:void(0)"}
+					=image_tag('icon.svg')
+					%h1.flex-title Innovación cívica
+					%p Potencializar las ideas, el talento y  los conocimientos de la ciudadanía para transformar y dar solución a los problemas comunes.
+
+				%a.flex-box{:href => "javascript:void(0)"}
+					=image_tag('icon.svg')
+					%h1.flex-title Transparencia y acceso a información pública
+					%p Facilitar las vías de acceso para que las personas podamos solicitar, consultar, recibir, difundir, reproducir y publicar información relacionada con nuestro gobierno y las decisiones que nos involucran como ciudadanía.
+
+				%a.flex-box{:href => "javascript:void(0)"}
+					=image_tag('icon.svg')
+					%h1.flex-title Derecho a la ciudad y el buen vivir
+					%p Consolidar una ciudad para todas y todos, incluyente, equitativa y con igualdad en el acceso de oportunidades y de desarrollo.
+
+				%a.flex-box{:href => "javascript:void(0)"}
+					=image_tag('icon.svg')
+					%h1.flex-title Desarrollo justo y sustentable
+					%p Propiciar el crecimiento y consolidación  de la comunidad, de forma equilibrada y sin que comprometa su estabilidad. 
+
+				%a.flex-box{:href => "javascript:void(0)"}
+					=image_tag('icon.svg')
+					%h1.flex-title Derechos humanos
+					%p Buscamos que todas las personas puedan desarrollarse de forma íntegra  y sin distinción de su género, raza, religión, opinión pública o cualquier índole.
+
+
 %section.faqs#faqs
 	.container
 		.faqs-content
@@ -108,44 +149,47 @@ title: Fondo Germina
 				%li
 					=link_to '¿Por qué Pedro Kumamoto renuncia al 70% de su salario?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p “No estoy de acuerdo en que ser un servidor público signifique convertirse en miembro de la "realeza" en nuestro país. Me indigna y me molesta que el servicio público sea sinónimo de cobrar una fortuna. Creo que toda persona debe recibir una remuneración justa o equitativa por el trabajo que desempeña. ¿Eso significa que a un diputado se le deba pagar más de 100 mil pesos al mes por el trabajo que realiza? Claro que no, eso es injusto y es aberrante frente a la realidad de México. Necesitamos entender que los puestos de representación popular deben guardar una correlación directa con el sueldo promedio del país.” - P.K. 
+						%p “No estoy de acuerdo en que ser un servidor público signifique convertirse en miembro de la "realeza" en nuestro país. Me indigna y me molesta que el servicio público sea sinónimo de cobrar una fortuna. Creo que toda persona debe recibir una remuneración justa o equitativa por el trabajo que desempeña. ¿Eso significa que a un diputado se le deba pagar más de 100 mil pesos al mes por el trabajo que realiza? Claro que no, eso es injusto y es aberrante frente a la realidad de México. Necesitamos entender que los puestos de representación popular deben guardar una correlación directa con el sueldo promedio del país.” - P.K.
 
 				%li
 					=link_to '¿A dónde se va a ir el dinero? ¿Quién lo va a gestionar?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p El 70% del salario será destinado a un fondo que se crea dentro Corporativa de Fundaciones, quienes serán también los encargados de gestionar el recurso. 
-
-				%li
-					=link_to '¿Por qué crear un fondo en Corporativa de Fundaciones?', 'javascript:void(0)', class: 'js-accordion-trigger'
-					.accordion-content
-						%p Corporativa de Fundaciones tiene una trayectoria de más de 15 años vinculando a organizaciones de la sociedad civil para poder obtener fondos, así como fortalecer sus capacidades de gestión. A través de Corporativa de Fundaciones tenemos la certeza de que estos fondos serán concursados con el mayor rigor, de manera completamente legal, formal y transparente.
+						%p El 70% del salario será destinado a un fondo que se crea dentro Corporativa de Fundaciones, quienes serán también los encargados de gestionar el recurso.
 
 				%li
 					=link_to '¿Qué es Corporativa de Fundaciones?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p
-							Corporativa de Fundaciones es una fundación comunitaria que favorece vinculaciones y alianzas entre inversionistas sociales y organizaciones civiles a fin de beneficiar a nuestra comunidad y contribuir a empoderar a los sectores más vulnerables. Puedes consultar a detalle sus trabajos en su sitio de internet:
-							=link_to 'http://www.cf.org.mx/', 'http://www.cf.org.mx/', target: '_blank'
+						%p Corporativa de Fundaciones tiene una trayectoria de más de 15 años vinculando a organizaciones de la sociedad civil para poder obtener fondos, así como fortalecer sus capacidades de gestión. A través de Corporativa de Fundaciones tenemos la certeza de que estos fondos serán concursados con el mayor rigor, de manera completamente legal, formal y transparente.
 
 				%li
-					=link_to '¿Cómo y cuándo van a poder concursar las personas por ese fondo?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Porque crear un fondo en Corporativa de Fundaciones?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p
+							Corporativa de Fundaciones tiene una trayectoria de más de 15 años vinculando a organizaciones de la sociedad civil para poder obtener fondos, así como fortalecer sus capacidades de gestión. A través de Corporativa de Fundaciones tenemos la certeza de que estos fondos serán concursados con el mayor rigor, de manera completamente legal, formal y transparente.
+				%li
+					=link_to '¿Cómo y cuándo podrán concursar las personas por este fondo?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
 						%p
 							En
-							=link_to 'http://www.fondogermina.mx/convocatoria', 'http://www.fondogermina.mx/convocatoria', target: '_blank'
-							podrán revisar los lineamientos para aplicar a la convocatoria. Los proyectos serán recibidos únicamente de manera digital del 30 de agosto de 2016 al 30 de septiembre de 2016 a las 16:00 al correo hola@fondogermina.mx.
+							=link_to 'http://www.fondogermina.mx/convocatoria', 'http://www.www.fondogermina.mx/convocatoria', target: '_blank'
+							podrán revisar los lineamientos para la convocatoria actual.
 
 				%li
-					=link_to '¿Qué tipo de proyectos se van a concursar?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Quiénes pueden participar?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p Podrán participar en la Convocatoria del Fondo Germina, las Organizaciones de la Sociedad Civil debidamente constituidas cuyo impacto se vea reflejado en el Estado de Jalisco, que no persigan fines de lucro y que, a su vez, contengan dentro de sus actividades proyectos en beneficio del empoderamiento ciudadano y de la participación social, así como ser donataria autorizada.
-						%p 
-							Los proyectos deberán enmarcarse dentro de por lo menos una de las siguientes áreas de incidencia: participación política, desarrollo sustentable, derecho a la ciudad y buen vivir, transparencia y acceso a la información. Consulta los detalles en
-
-							=link_to 'http://www.fondogermina.mx/convocatoria', 'http://www.fondogermina.mx/convocatoria', target: '_blank'
+						%p
+							En esta edición, podrán participar personas que vivan en Jalisco y que ejerzan actividades que tengan incidencia en en los sectores de academia, promoción comunitaria y defensa de los derechos humanos.
 
 				%li
-					=link_to '¿Va a ser transparente el concurso por los fondos? ¿Quién va a decidir quién gana los recursos? ', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Qué tipo de proyectos busca apoyar Germina?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p Esta convocatoria está diseñada y dirigida para el desarrollo de proyectos de investigación-acción, activismo, promoción comunitaria e intervención social que tengan impacto en el Estado de Jalisco. 
+
+						%p Todas las propuestas deberán de  así como en las áreas de incidencia del fondo: participación política, innovación cívica, transparencia y acceso a información pública, derecho a la ciudad y el buen vivir, desarrollo justo y sustentable y derechos humanos.
+
+
+				%li
+					=link_to '¿El concurso para los fondos va a ser transparente? ¿Quién se encarga de elegir a los proyectos beneficiarios?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
 						%p 
 							Por supuesto. Se conformarán comités plurales encargados de evaluar los proyectos con base en lineamientos públicos, claros, y transparentes. Los criterios de evaluación serán conocidos por todos y todas las participantes desde el lanzamiento de la convocatoria, consúltalos en
@@ -153,87 +197,86 @@ title: Fondo Germina
 							=link_to 'http://www.fondogermina.mx/convocatoria', 'http://www.fondogermina.mx/convocatoria', target: '_blank'
 
 				%li
-					=link_to '¿Cómo vamos a saber si los fondos se están utilizando correctamente?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Cómo vamos a saber si los fondos se están utilizando de forma correcta?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
 						%p Para cada uno de los proyectos que sean acreedores de este fondo, Corporativa de Fundaciones hará un trabajo de seguimiento y evaluación para asegurarse de que se estén cumpliendo los objetivos planteados desde la convocatoria.
 
 				%li
-					=link_to '¿Puedo aportar yo recursos para el Fondo Germina?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Puedo aportar recursos para Germina?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p Claro. Comunícate con Corporativa de Fundaciones al teléfono (33)36158286 o al domicilio Calle Manuel López Cotilla 2139, Guadalajara, Jal. para aportar recursos al fondo. 
+						%p Germina es un fondo semilla abierto, si deseas sumarte y hacer una donación, por favor,  comunícate con Corporativa de Fundaciones al teléfono (33)36158286 o al domicilio Calle Manuel López Cotilla 2139, Guadalajara, Jal.
 
 				%li
-					=link_to 'Soy una organización que no está constituida en Jalisco pero quiero hacer un proyecto en Jalisco, ¿puedo aplicar?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to 'Mi proyecto cumple con los requisitos pero no vivo en Jalisco, ¿puedo aplicar a la convocatoria?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
 						%p Sí, siempre y cuando el proyecto y su impacto sea en el estado de Jalisco y cumplas con los requisitos de la convocatoria.
 
+						%p Es importante que tengas disponibilidad de participar en las asesorías de forma presencial o por streaming. 
+
+
 				%li
-					=link_to '¿Puede aplicar un proyecto que no vaya a realizarse en Jalisco?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Puede concursar un proyecto que no vaya a ejecutarse en Jalisco?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
 						%p
-							En este primera convocatoria, Germina solamente impulsará proyectos que tengan impacto en Jalisco. Pero sigamos en contacto para futuras convocatorias que puedan contemplarlo, regístrate en:
-
-							=link_to 'Fondo Germina', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform?usp=fb_send_twt', target: '_blank'
-
+							En esta convocatoria, Germina solamente impulsará proyectos que tengan impacto en Jalisco. Pero sigamos en contacto para que futuras convocatorias puedan contemplarlo, envíanos un correo a hola@fondogermina.mx para incluirte en nuestra base de datos.
 
 				%li
-					=link_to '¿Puede mi organización aplicar si no es donataria autorizada?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Puedo aplicar a la convocatoria desde un colectivo u organización de la sociedad civil?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p
-							Esta primera convocatoria de Germina solamente está abierta a proyectos de organizaciones que sean donatarias autorizadas, por los requisitos internos de Corporativa de Fundaciones, organización que gestiona el fondo. Germina tiene como objetivo a largo plazo impulsar proyectos, colectivos y organizaciones, por lo que estaremos generando más actividades. Queremos conocer a tu organización o tu proyecto, y que participes en el proceso de retroalimentación de Germina. Para seguir en contacto, regístrate en:
-							=link_to 'Fondo Germina', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform?usp=fb_send_twt', target: '_blank'
+						%p Esta convocatoria tiene el objetivo de impulsar proyectos propuestos por personas que, desde lo particular, actúen por lo común; sin embargo, queremos conocer a tu organización o proyecto, y que participes en el proceso de retroalimentación de Germina. Envíanos un correo a hola@fondogermina.mx para seguir en contacto.
+				%li
+					=link_to '¿Cuál fue el presupuesto de la primera convocatoria?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					.accordion-content
+						%p En la primer convocatoria — en agosto del 2016— se repartieron $483,549.38 MXN entre los 3 proyectos beneficiarios de las organizaciones Familiares y Amigos de Personas con Discapacidad Intelectual A.C., Fundación Ecológica Selva Negra A.C. y Líderes del Siglo A.C.
 
 				%li
-					=link_to '¿Cuál es el presupuesto para la primera convocatoria del Fondo Germina?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Cuál es el presupuesto de la convocatoria actual?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p En esta primera convocatoria, se repartirán hasta $950,000.00 (Novecientos cincuenta mil pesos mexicanos, M.N.). En el caso de no repartir la totalidad del monto, el excedente se acumulará para futuras ediciones de la convocatoria.
+						%p En esta convocatoria se repartirán de forma parcial $180,000.00 MXN entre los dos proyectos que resulten beneficiarios. 
 
 				%li
 					=link_to '¿Se pueden presentar organizaciones con fines de lucro?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p No, en esta convocatoria Germina impulsará exclusivamente a las Organizaciones de la Sociedad Civil debidamente constituidas cuyo impacto se vea reflejado en el Estado de Jalisco, sin fines de lucro y que, a su vez, contengan dentro de sus actividades proyectos en beneficio del empoderamiento ciudadano y de la participación social, así como ser donataria autorizada.
+						%p Ninguna de las propuestas deberá perseguir fines de lucro. Por el contrario, tendrá como finalidad el buscar la participación social y política de la comunidad. 
+
 
 				%li
-					=link_to 'Somos un grupo de personas no constituidas como AC y queremos presentar un proyecto ante Germina, ¿necesitamos constituir una AC para presentarnos y qué pasos tenemos que seguir?', 'javascript:void(0)', class: 'js-accordion-trigger'
-					.accordion-content
-						%p
-							Germina tiene como objetivo a largo plazo impulsar proyectos, colectivos y organizaciones, por lo que estaremos generando más actividades. Queremos conocer a tu organización o tu proyecto, y que participes en el proceso de retroalimentación de Germina para seguir creciendo. Para seguir en contacto, regístrate en:
-							=link_to 'Fondo Germina', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform?usp=fb_send_twt', target: '_blank'
-
-				%li
-					=link_to '¿Cómo puede mi organización convertirse en donataria autorizada?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to 'Pertenezco a una organización a la que le gustaría constituirse como donataria autorizada, ¿qué pasos debo seguir?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
 						%p Para consultar el proceso de constitución legal de tu organización, recomendamos la lectura del Manual de Constitución Legal de Asociaciones Civiles elaborado por Alternativas y Capacidades.
 
 				%li
-					=link_to '¿Habrá más ediciones del Fondo Germina?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Se llevarán a cabo más convocatorias en el futuro?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p Sí. Inscríbete en aquí para recibir información sobre Germina y sus futuras convocatorias. 
+						%p Sí. Envíanos un correo a hola@fondogermina.mx para estar informado sobre las actividades del fondo y sus futuras convocatorias.
 
 				%li
-					=link_to '¿Tengo que ser habitante del Distrito 10 para poder presentar un proyecto?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Tengo que ser del Distrito 10 para presentar un proyecto?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p No. El requisito es que los proyectos tengan impacto en Jalisco.
+						%p No. El requisito es que los proyectos tengan un impacto directo con el Estado de Jalisco.
 
 				%li
-					=link_to '¿Puede mi organización participar con más de un proyecto?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Puede presentarse más de una propuesta?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p Sí. No hay límite de proyectos que pueda presentar cada organización. Ten en cuenta que se deberá realizar una aplicación por proyecto.
+						%p Sí. No hay límite de proyectos que pueda presentar cada persona. Ten en cuenta que se deberá realizar una aplicación por propuesta.
+
 
 				%li
-					=link_to 'En caso de ser aceptado, ¿cuál es el plazo para llevar a cabo el proyecto?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to 'En caso de ser aceptado, ¿cuál es el plazo para ejecutar el proyecto en la presente convocatoria?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p El apoyo económico otorgado a los proyectos deberá ser ejecutado en una duración máxima de doce meses, tomando en cuenta su inicio como máximo dos meses después de haber recibido el dinero. Esto en lo que se refiere al apoyo económico otorgado por Germina, sin embargo, el proyecto podrá continuar una vez ejecutados estos fondos.
+						%p El apoyo económico otorgado a los proyectos deberá ser empleado en una duración máxima de seis meses, después de la primer entrega de recursos.  
+
+						%p  Esto en lo que se refiere al apoyo económico otorgado por Germina, sin embargo, el proyecto podrá continuar una vez ejecutados estos fondos.
 
 				%li
-					=link_to '¿Puede un proyecto seleccionado utilizar recursos de diferentes procedencias?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to '¿Puede un proyecto seleccionado utilizar recursos de diferente procedencia? ', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p Sí. Germina otorgará apoyos parciales o totales para proyectos y las organizaciones se encuentran en total libertad de buscar recursos por otros medios, siempre y cuando esto no les impida cumplir con lo establecido en las bases de la convocatoria. 
+						%p Sí. Germina otorgará apoyos parciales o totales para proyectos, pero las personas se encuentran en total libertad de buscar recursos por otros medios, siempre y cuando esto no les impida cumplir con lo establecido en las bases de la convocatoria
 
 				%li
-					=link_to 'No soy parte de una organización pero tengo una muy buena idea ¿Cómo puedo participar?', 'javascript:void(0)', class: 'js-accordion-trigger'
+					=link_to 'Tengo una muy buena idea pero mi proyecto no cumple con los requisitos para participar en la convocatoria ¿cómo puedo participar?', 'javascript:void(0)', class: 'js-accordion-trigger'
 					.accordion-content
-						%p Te recomendamos platicarle tu idea a más personas, encontrar aliadas y aliados y comenzar a esbozar los pasos a seguir para lograr llevar a cabo esa idea.
+						%p Te recomendamos compartir tus ideas con más personas, encontrar aliadas y aliados y comenzar a esbozar los pasos a seguir para lograr llevar a cabo esa propuesta.
 
 			/ %p Asimismo, te invitamos a que seas parte de la comunidad de Germina:
 			/ =link_to 'Unirme a Germina', 'https://docs.google.com/forms/d/e/1FAIpQLSenKhLKz31lvENTlFN8hjbCcOseOR2jIpQ3bX2jrUPK_uLTZg/viewform', target: '_blank', class: 'button small'

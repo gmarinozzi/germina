@@ -1,0 +1,12 @@
+section.whatwedo {
+  text-align: center; }
+  section.whatwedo .what-content {
+    padding: 60px 150px 60px 150px; }
+
+#do {
+  padding-top: 67px;
+  margin-top: -67px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box; }
+
+/*# sourceMappingURL=_whatwedo.css.map */
