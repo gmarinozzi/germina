@@ -844,6 +844,94 @@ section.what {
   margin-top: -67px;
   background-clip: content-box; }
 
+section.whatwedo {
+  text-align: center;
+  background-color: #F7F6F8; }
+  section.whatwedo .what-content {
+    padding: 60px 150px 60px 150px; }
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    section.whatwedo .what-content {
+      padding: 60px 0 0 0; } }
+  section.whatwedo .flex-boxes {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
+    section.whatwedo .flex-boxes::after {
+      clear: both;
+      content: "";
+      display: block; }
+    section.whatwedo .flex-boxes .flex-box {
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+      background: white;
+      border-radius: 3px;
+      box-shadow: inset 0 0 1px #F7F6F8, 0 2px 4px #e6e6e6;
+      display: block;
+      -webkit-box-flex: 2;
+          -ms-flex: 2 2 15em;
+              flex: 2 2 15em;
+      margin: 0.4em;
+      padding: 2em 2em 3em 2em;
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      section.whatwedo .flex-boxes .flex-box:nth-child(1) {
+        border-top: 6px solid #EE5269; }
+        section.whatwedo .flex-boxes .flex-box:nth-child(1):focus, section.whatwedo .flex-boxes .flex-box:nth-child(1):hover {
+          background-color: rgba(238, 82, 105, 0.1); }
+      section.whatwedo .flex-boxes .flex-box:nth-child(2) {
+        border-top: 6px solid #FFD174; }
+        section.whatwedo .flex-boxes .flex-box:nth-child(2):focus, section.whatwedo .flex-boxes .flex-box:nth-child(2):hover {
+          background-color: rgba(255, 209, 116, 0.1); }
+      section.whatwedo .flex-boxes .flex-box:nth-child(3) {
+        border-top: 6px solid #009285; }
+        section.whatwedo .flex-boxes .flex-box:nth-child(3):focus, section.whatwedo .flex-boxes .flex-box:nth-child(3):hover {
+          background-color: rgba(0, 146, 133, 0.1); }
+      section.whatwedo .flex-boxes .flex-box:nth-child(4) {
+        border-top: 6px solid #4B4586; }
+        section.whatwedo .flex-boxes .flex-box:nth-child(4):focus, section.whatwedo .flex-boxes .flex-box:nth-child(4):hover {
+          background-color: rgba(75, 69, 134, 0.1); }
+      section.whatwedo .flex-boxes .flex-box:nth-child(5) {
+        border-top: 6px solid #6D93DF; }
+        section.whatwedo .flex-boxes .flex-box:nth-child(5):focus, section.whatwedo .flex-boxes .flex-box:nth-child(5):hover {
+          background-color: rgba(109, 147, 223, 0.1); }
+      section.whatwedo .flex-boxes .flex-box:nth-child(6) {
+        border-top: 6px solid #F6C05C; }
+        section.whatwedo .flex-boxes .flex-box:nth-child(6):focus, section.whatwedo .flex-boxes .flex-box:nth-child(6):hover {
+          background-color: rgba(246, 192, 92, 0.1); }
+      section.whatwedo .flex-boxes .flex-box img {
+        display: block;
+        height: 3em;
+        margin: 0 auto 1em;
+        opacity: 0.4; }
+      section.whatwedo .flex-boxes .flex-box .flex-title {
+        color: rgba(51, 51, 51, 0.7);
+        font-size: 1.2em;
+        margin-bottom: 0.5em; }
+      section.whatwedo .flex-boxes .flex-box p {
+        color: rgba(51, 51, 51, 0.6);
+        line-height: 1.5em;
+        margin: auto; }
+    section.whatwedo .flex-boxes .flex-box-big {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 40em;
+              flex: 1 1 40em; }
+
+#do {
+  padding-top: 67px;
+  margin-top: -67px;
+  background-clip: content-box; }
+
 section.whom {
   background-color: #F7F6F8; }
   section.whom .whom-content {
