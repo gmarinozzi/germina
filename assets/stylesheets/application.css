@@ -912,8 +912,7 @@ section.whatwedo {
       section.whatwedo .flex-boxes .flex-box img {
         display: block;
         height: 3em;
-        margin: 0 auto 1em;
-        opacity: 0.4; }
+        margin: 0 auto 1em; }
       section.whatwedo .flex-boxes .flex-box .flex-title {
         color: rgba(51, 51, 51, 0.7);
         font-size: 1.2em;
