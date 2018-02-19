@@ -972,6 +972,11 @@ section.how {
       color: #fff; }
   section.how .button {
     margin-top: 30px; }
+  section.how p a {
+    color: #fff;
+    text-decoration: underline; }
+    section.how p a:hover {
+      color: #fff; }
 
 #how {
   padding-top: 67px;
