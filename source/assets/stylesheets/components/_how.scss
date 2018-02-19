@@ -10,6 +10,15 @@ section.how{
   .button{
   	margin-top: 30px;
   }
+  p {
+    a{
+      color:#fff;
+      text-decoration: underline;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
 }
 #how {
 	padding-top: 67px;
